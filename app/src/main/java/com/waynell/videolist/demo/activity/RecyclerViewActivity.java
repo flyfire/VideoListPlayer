@@ -19,7 +19,7 @@ import com.waynell.videolist.visibility.scroll.RecyclerViewItemPositionGetter;
 
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -27,7 +27,7 @@ import butterknife.ButterKnife;
  */
 public class RecyclerViewActivity extends AppCompatActivity {
 
-    @Bind(R.id.recycler_view)
+    @BindView(R.id.recycler_view)
     RecyclerView mRecyclerView;
 
     private int mScrollState;

@@ -27,23 +27,23 @@ import com.waynell.videolist.widget.TextureVideoView;
 import java.io.File;
 import java.io.InputStream;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.OnClick;
 
 
 public class VideoViewHolder extends BaseViewHolder<VideoItem>
         implements VideoLoadMvpView, ViewPropertyAnimatorListener, ListItem {
 
-    @Bind(R.id.video_view)
+    @BindView(R.id.video_view)
     public TextureVideoView videoView;
 
-    @Bind(R.id.video_text)
+    @BindView(R.id.video_text)
     public TextView videoTitle;
 
-    @Bind(R.id.video_cover)
+    @BindView(R.id.video_cover)
     public ImageView videoCover;
 
-    @Bind(R.id.video_progress)
+    @BindView(R.id.video_progress)
     public CircularProgressBar progressBar;
 
     private int videoState = STATE_IDLE;

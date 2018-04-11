@@ -6,14 +6,14 @@ import android.widget.TextView;
 import com.waynell.videolist.demo.R;
 import com.waynell.videolist.demo.model.TextItem;
 
-import butterknife.Bind;
+import butterknife.BindView;
 
 /**
  * @author Wayne
  */
 public class TextViewHolder extends BaseViewHolder<TextItem> {
 
-    @Bind(R.id.text_view)
+    @BindView(R.id.text_view)
     TextView mTextView;
 
     public TextViewHolder(View itemView) {
